@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript Lab6</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <script language="JavaScript" type="text/javascript">
+  
+       var pizzaSize;
+      
+        // prompt user for input
+        pizzaSize = prompt("Enter size of pizza (diameter in inches)","12");
+        pizzaPrice = prompt("Enter price of pizza as a decimal (no $ sign)","9.99");
+        numPizzaSlice = prompt("Enter the number of pizza slices you want in your pizza","5"); 
+        // convert data to numeric format
+        pizzaSize = parseInt(pizzaSize);
+        pizzaPrice = parseFloat(pizzaPrice);
+        numPizzaSlice = parseFloat(numPizzaSlice);
+      
+        // calculate results for persquareinch
+        var radius = ( pizzaSize / 2.0 );
+        var area = Math.PI * radius * radius;
+        var priceNoRound = pizzaPrice / area;
+        var pricePerSquareInch = priceNoRound.toFixed(2);
+        // display results
+        document.write("<p> The price per square inch is: $ " + pricePerSquareInch + "</p>");
+
+        //Calcualte results for perslice
+        var perSlice = pizzaSize/numPizzaSlice
+        document.write("<p> The price per slice is: $" + perSlice + "</p>");
+      
+                       
+    </script>
+     <img src="pizza.jpeg" alt="Pizza"">
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background-color:beige
+}
+p{
+    text-align: center;
+    font-size: 30px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* or any specific width */
+}
